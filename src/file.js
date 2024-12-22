@@ -142,11 +142,10 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/fonts/image/Screenshot (112).png"), // Add the image path for Tasky App
-      projectName: "Tasky App",
-      projectDesc: "Tasky is a simple and intuitive task management app designed to help users organize, " + 
-      "prioritize, and complete tasks efficiently. The app is perfect for those looking to manage their " +
-      "time and boost productivity. Note: Tasky is still in development. Core features like task creation " +
-      "and prioritization are functional, but more features, including user authentication and reminders, are coming soon!",
+      projectName: "Tasky App (Web Version)",
+      projectDesc: "Tasky is a simple and intuitive task management web app designed to help users organize, " +
+        "prioritize, and complete tasks efficiently. The web version allows task creation, prioritization, and " +
+        "more, with additional features planned in the future, such as user authentication and reminders.",
       footerLink: [
         {
           name: "Visit Website",
@@ -159,11 +158,11 @@ const bigProjects = {
       ]
     },
     {
-      image: require("/"), // Add the image path for Nextu
+      image: require("/"), // Add the image path for Weather App
       projectName: "Weather App",
       projectDesc: "Weather App provides real-time weather data and dynamically changes its background " +
-      "color based on the weather conditions (e.g., sunny, rainy, cloudy). It fetches data using the " +
-      "OpenWeather API.",
+        "color based on the weather conditions (e.g., sunny, rainy, cloudy). It fetches data using the " +
+        "OpenWeather API.",
       footerLink: [
         {
           name: "Visit Website",
@@ -176,12 +175,12 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/fonts/image/Screenshot (113).png"), // Add the image path for Tasky App
+      image: require("./assets/fonts/image/Screenshot (113).png"), // Add the image path for Password Generator
       projectName: "Password Generator",
       projectDesc: "Password Generator is a tool that generates secure, random passwords for your accounts. " +
-      "After generating a password, it is automatically saved as a text file locally on your device for easy " +
-      "access. Note: This app is still in development. Current features include password generation and local " +
-      "file saving, with future updates planned for password encryption and enhanced security options.",
+        "After generating a password, it is automatically saved as a text file locally on your device for easy " +
+        "access. Note: This app is still in development. Current features include password generation and local " +
+        "file saving, with future updates planned for password encryption and enhanced security options.",
       footerLink: [
         {
           name: "Visit Website",
@@ -193,9 +192,43 @@ const bigProjects = {
         }
       ]
     },
+    {
+      image: require("./assets/fonts/image/Screenshot (120).png"), // Add the image path for Tasky App Desktop version
+      projectName: "Tasky App (Desktop Version)",
+      projectDesc: "Tasky App Desktop is the JavaFX-based desktop version of the Tasky Web App. " +
+        "This version replicates core functionality like task management, creation, and prioritization. " +
+        "It features a desktop UI with a sidebar for navigation and a task card interface for managing tasks. " +
+        "Currently, it is still in development, and more features like task editing and user authentication are planned.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/Fira0985/Tasky-Desktop-App" // Replace with your actual GitHub URL for the desktop version
+        }
+      ]
+    },
+    {
+      image: require("./assets/fonts/image/Screenshot (119).png"), // Add the image path for Penny Juice
+      projectName: "Penny Juice",
+      projectDesc: "Penny Juice is a frontend-only web application developed as part of the Omishtu Joy Tech Solution course. " +
+        "This project showcases my frontend development skills, featuring a responsive and user-friendly design for a juice-selling business. " +
+        "It includes features like interactive product listings, smooth animations, and a visually appealing interface, all built with HTML, CSS, and JavaScript.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://github.com/Fira0985/Penny-Juice" // Replace with your actual URL
+        },
+        {
+          name: "View on GitHub",
+          url: "https://github.com/Fira0985/Penny-Juice" // Replace with your actual GitHub URL
+        }
+      ]
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
+
+
 
 export {
   bigProjects, educationInfo, greeting, skillsSection,
