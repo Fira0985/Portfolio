@@ -1,0 +1,101 @@
+/* Main container for the skills section */
+.main {
+  padding: 50px;
+  transition: all 0.3s ease;
+}
+
+/* Heading styles */
+.skills-heading {
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dark-mode-skills-heading {
+  color: white;
+}
+
+/* Subtitle styles */
+.skills-text-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dark-mode.skills-text-subtitle {
+  color: #bbb;
+}
+
+/* Card container for skills */
+.skills-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Individual skill card */
+.skill-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode skill card */
+.dark-mode.skill-card {
+  background-color: white;
+  color: black;
+}
+
+/* Skill card title */
+.skill-title {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.dark-mode .skill-title {
+  color: black;
+}
+
+/* Software skill section */
+.software-skills-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.software-skill-card {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  text-align: center;
+}
+
+.software-skill-card img {
+  max-width: 60px;
+  margin-bottom: 10px;
+}
+
+.software-skill-card h3 {
+  font-size: 1rem;
+  color: #333;
+}
+
+.dark-mode .software-skill-card {
+  color: black;
+}

@@ -1,0 +1,271 @@
+.name{
+  font-family: "Roboto", sans-serif; /* Professional font choice */
+  font-size: 2.0rem;
+  font-weight: 700;
+  position: relative;
+  color: #333; /* Neutral and professional color */
+}
+
+/* Animation for the name remains unchanged */
+.animate-name {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  animation: slide-in 2s ease-out forwards;
+  color: black;
+  font-size: larger;
+}
+
+/* Header Container */
+.header {
+  background-color: #ffffff; /* Clean and professional white */
+  border-bottom: 1px solid #ddd; /* Subtle separator */
+  max-width: 100%;
+  height: 10vh;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Professional shadow effect */
+}
+
+/* Navigation Menu */
+.header ul {
+  display: flex;
+  gap: 15px; /* Add space between menu items */
+  margin: 0;
+  padding: 0;
+}
+
+.header ul li {
+  list-style: none;
+}
+
+.header ul a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header ul a:hover {
+  color: #0077b5;
+}
+
+/* Hamburger Icon Styling */
+.hamburger-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  span{
+    margin-left: 25%;
+    margin-top: 20%;
+  }
+
+  .header-closed{
+    align-items: flex-start;
+  }
+
+  .header-closed ul{
+    display: none;
+  }
+
+  .header-closed .name{
+    display: none;
+  }
+  
+  .header-closed span{
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .hamburger-icon{
+    display: flex;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    height: 23vh;
+  }
+
+  .header ul {
+    flex-direction: column;
+    gap: 10px; 
+    width: 100%;
+  }
+
+  .header ul a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Overlay for the modal */
+.contact-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Darker, more subtle background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Fade-in animation for the modal overlay */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Container for the modal */
+.contact-modal-container {
+  position: relative;
+  text-align: center;
+  width: 35%; /* Reduced size for a compact modern look */
+  max-width: 450px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 12px; /* Rounded corners for a modern effect */
+  border: 1px solid #ddd; /* Soft border */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Deep shadow for depth */
+  overflow: hidden;
+  animation: slideUp 0.5s ease-out;
+}
+
+/* Slide-up animation for the modal */
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Close button style */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.close-button:hover {
+  color: #ff0000;
+  transform: scale(1.2); /* Slight zoom effect for the close button */
+}
+
+/* Title */
+.contact-title {
+  font-size: 1.3em;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Description paragraph */
+.contact-description {
+  font-size: 0.7em;
+  color: #777;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contact method section */
+.contact-method h2,
+.social-media h2 {
+  font-size: 1.3em;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contact link styling */
+.contact-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #004999;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* Social media list */
+.social-media-list {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media-list li {
+  margin: 12px 0;
+  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .contact-modal-container {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 1.8em;
+  }
+
+  .contact-description {
+    font-size: 1em;
+  }
+}
+

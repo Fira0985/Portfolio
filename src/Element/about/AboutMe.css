@@ -1,0 +1,122 @@
+/* General Styling */
+.main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-me-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.dark-mode.subtitle {
+  color: #ccc;
+}
+
+/* Cards Container */
+.about-me-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Card Styling */
+.about-me-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-me-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode-about-me-card{
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dark-mode-about-me-card:hover{
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px white;
+}
+
+.about-me-card.expanded {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Card Title */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.dark-mode.card-title {
+  background-color: white;
+  color: black;
+}
+
+
+/* Card Description */
+.card-description {
+  font-size: 1rem;
+  color: #555;
+  margin: 0 0 20px;
+}
+
+.dark-mode.card-description {
+  background-color: white;
+  color: black;
+}
+
+/* Read More Button */
+.read-more-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  background: none;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.read-more-btn:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.dark-mode .read-more-btn {
+  color: #00bcd4;
+  border-color: #00bcd4;
+}
+
+.dark-mode .read-more-btn:hover {
+  background: #00bcd4;
+  color: #fff;
+}

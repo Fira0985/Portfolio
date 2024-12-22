@@ -1,0 +1,269 @@
+/* Greeting.scss */
+
+/* General Styling */
+.greet-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.greeting-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: row;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.greeting-text-div {
+  max-width: 600px;
+  margin-bottom: 15vh;
+}
+
+.greeting-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  text-align: left;
+  transition: color 0.3s ease;
+  margin-bottom: 7vh;
+}
+
+
+.greeting-text-p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.subTitle {
+  color: var(--text-secondary);
+}
+
+/* Button Styling */
+.button-greeting-div {
+  display: flex;
+  gap: 20px;
+}
+
+.download-link-button {
+  text-decoration: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-bg-hover);
+  transform: scale(1.05);
+}
+
+/* Profile Image */
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  flex: 1;
+  margin-bottom: 15vh;
+}
+
+.greeting-image-div img {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.greeting-image-div img:hover {
+  transform: scale(1.05);
+}
+
+/* Dark Mode Styling */
+.dark-mode .greeting-text,
+.dark-mode .greeting-text-p {
+  color: var(--dark-text);
+}
+
+.dark-mode .greeting-text-p {
+  color: var(--dark-text-secondary);
+}
+
+.dark-mode button {
+  background-color: var(--dark-button-bg);
+  color: var(--dark-button-text);
+}
+
+.dark-mode button:hover {
+  background-color: var(--dark-button-bg-hover);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .greeting-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .greeting-text-div {
+    text-align: center;
+  }
+
+  .greeting-image-div {
+    margin-top: 20px;
+  }
+
+  .greeting-text {
+    font-size: 2.5rem;
+  }
+
+  .greeting-text-p {
+    font-size: 1.1rem;
+  }
+
+  .button-greeting-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+
+/* Container for the modal */
+.contact-modal-container {
+  position: relative;
+  text-align: center;
+  width: 35%; /* Reduced size for a compact modern look */
+  max-width: 450px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 12px; /* Rounded corners for a modern effect */
+  border: 1px solid #ddd; /* Soft border */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Deep shadow for depth */
+  overflow: hidden;
+  animation: slideUp 0.5s ease-out;
+}
+
+/* Slide-up animation for the modal */
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Close button style */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.close-button:hover {
+  color: #ff0000;
+  transform: scale(1.2); /* Slight zoom effect for the close button */
+}
+
+/* Title */
+.contact-title {
+  font-size: 2.2em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Description paragraph */
+.contact-description {
+  font-size: 1.1em;
+  color: #777;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contact method section */
+.contact-method h2,
+.social-media h2 {
+  font-size: 1.3em;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contact link styling */
+.contact-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #004999;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* Social media list */
+.social-media-list {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media-list li {
+  margin: 12px 0;
+  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .contact-modal-container {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 1.8em;
+  }
+
+  .contact-description {
+    font-size: 1em;
+  }
+}
+
