@@ -202,7 +202,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "View on GitHub",
-          url: "https://github.com/Fira0985/Tasky-Desktop-App" // Replace with your actual GitHub URL for the desktop version
+          url: "https://github.com/Fira0985/Tasky-App-Desktop" // Replace with your actual GitHub URL for the desktop version
         }
       ]
     },
