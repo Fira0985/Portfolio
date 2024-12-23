@@ -1,7 +1,7 @@
 {
   "name": "portifolio",
   "version": "0.1.0",
-  "homepage": "https://github.com/Fira0985/Portfolio",
+  "homepage": "https://Fira0985.github.io/Portfolio",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
