@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Fira0985/Portfolio/static/css/main.fa205d8f.css",
-    "main.js": "/Fira0985/Portfolio/static/js/main.d87173be.js",
-    "static/media/Screenshot (119).png": "/Fira0985/Portfolio/static/media/Screenshot (119).80d859a70dd0e9e476db.png",
-    "static/media/20240513_180033-removebg-preview-removebg-preview.png": "/Fira0985/Portfolio/static/media/20240513_180033-removebg-preview-removebg-preview.239d3af20fcdbdde7338.png",
-    "static/media/Montserrat-Regular.ttf": "/Fira0985/Portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
-    "static/media/resume.pdf": "/Fira0985/Portfolio/static/media/resume.661eef603a9de186fbbc.pdf",
-    "static/media/Agustina.woff": "/Fira0985/Portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
-    "static/media/Screenshot (112).png": "/Fira0985/Portfolio/static/media/Screenshot (112).eadf41ad916b39aa60b8.png",
-    "static/media/Screenshot (113).png": "/Fira0985/Portfolio/static/media/Screenshot (113).8c5dbedf6cd6e9555ab5.png",
-    "static/media/Screenshot (120).png": "/Fira0985/Portfolio/static/media/Screenshot (120).fc8820d0000de8489859.png",
-    "index.html": "/Fira0985/Portfolio/index.html",
-    "main.fa205d8f.css.map": "/Fira0985/Portfolio/static/css/main.fa205d8f.css.map",
-    "main.d87173be.js.map": "/Fira0985/Portfolio/static/js/main.d87173be.js.map"
+    "main.css": "/Portfolio/static/css/main.1e01d726.css",
+    "main.js": "/Portfolio/static/js/main.18f0fbe1.js",
+    "static/media/Screenshot (119).png": "/Portfolio/static/media/Screenshot (119).80d859a70dd0e9e476db.png",
+    "static/media/20240513_180033-removebg-preview-removebg-preview.png": "/Portfolio/static/media/20240513_180033-removebg-preview-removebg-preview.239d3af20fcdbdde7338.png",
+    "static/media/Montserrat-Regular.ttf": "/Portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/resume.pdf": "/Portfolio/static/media/resume.661eef603a9de186fbbc.pdf",
+    "static/media/Agustina.woff": "/Portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/Screenshot (112).png": "/Portfolio/static/media/Screenshot (112).eadf41ad916b39aa60b8.png",
+    "static/media/Screenshot (113).png": "/Portfolio/static/media/Screenshot (113).8c5dbedf6cd6e9555ab5.png",
+    "static/media/Screenshot (120).png": "/Portfolio/static/media/Screenshot (120).fc8820d0000de8489859.png",
+    "index.html": "/Portfolio/index.html",
+    "main.1e01d726.css.map": "/Portfolio/static/css/main.1e01d726.css.map",
+    "main.18f0fbe1.js.map": "/Portfolio/static/js/main.18f0fbe1.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa205d8f.css",
-    "static/js/main.d87173be.js"
+    "static/css/main.1e01d726.css",
+    "static/js/main.18f0fbe1.js"
   ]
 }
