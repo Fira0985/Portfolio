@@ -29,7 +29,7 @@ export default function Footer() {
           <h3 className="footer-heading">Quick Links</h3>
           <ul className="footer-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#skills">Skill</a></li>
+            <li><a href="#skills">My Skill</a></li>
             <li><a href="#Proficiency">Proficiency</a></li>
             <li><a href="#Education">Education</a></li>
             <li><a href="#Projects">Projects</a></li>
