@@ -9,7 +9,6 @@ import { useLocalStorage } from "./local/useLocalStorage";
 import "./Main.scss";
 import StartupProject from "./My_Project/Project";
 import ScrollToTopButton from "./Quick_Top/Quick";
-import StackProgress from "./skill_bar/SkillProgress";
 import Skills from "./skills/Skills";
 
 const Main = () => {
@@ -29,7 +28,6 @@ const Main = () => {
             <Greeting />
             <div className="Education">
             <Skills />
-            <StackProgress />
             </div>
             <Education />
             <StartupProject />
